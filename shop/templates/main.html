@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+{% extends 'header.html' %}
+<body>
+    {%block main%}
+    <h1 class="catalog-title">Каталог</h1>
+    
+    <div class="categories">
+        <section>
+            <img src="images/диваны.png" alt="диваны", width="220px",>
+            <div class="category">Диваны</div>
+        </section>
+        <section>
+            <img src="images/кровати.png" alt="кровати", width="220px",>
+            <div class="category">Кровати</div>
+        </section>
+        <section>
+            <img src="images/кресла.png" alt="кресла", width="220px",>
+            <div class="category">Кресла</div>
+        </section>
+        <section>
+            <img src="images/стулья.png" alt="стулья", width="220px",>
+            <div class="category">Стулья</div>
+        </section>
+        <section>
+            <img src="images/столы.png" alt="столы", width="220px",>
+            <div class="category">Столы</div>
+        </section>
+    </div>
+    {%endblock%}
+</body>
+</html>
