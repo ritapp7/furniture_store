@@ -7,16 +7,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="header">
-        <div class="logo">ЭкоМебель</div>
-        <div class="nav">
-            <a href="#">Каталог</a>
-            <a href="#">Поиск</a>
-            <a href="#">Корзина</a>
-            <a href="#">Вход</a>
+    <header style="background-color: #e7e7e7ff; padding: 20px;">
+        <h1 style="display: inline;">ЭкоМебель</h1>
+        <div style="display: inline; float: right;">
+            <span>Каталог</span>
+            <input type="text" placeholder="Поиск">
+            <span>Корзина</span>
+            <span>Вход</span>
         </div>
-    </div>
     </header>
     {% block main %}
     {% endblock %}
