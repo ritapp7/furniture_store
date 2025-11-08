@@ -114,18 +114,3 @@ class Position(models.Model):
     def __str__(self):
         return f"{self.id_product} x {self.quantity}"
     
-class Review(models.Model):
-    id_user = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name="Пользователь")
-    id_product = models.ForeignKey(Product, on_delete=models.CASCADE, verbose_name="Товар")
-    comment = models.TextField("Комментарий") 
-    date = models.DateField("Дата создания")
-
-    class Meta:
-        verbose_name = "Отзыв"
-        verbose_name_plural = "Отзывы"
-        indexes = [
-            models.Index(fields=["id_user"])
-        ]
-
-    def __str__(self):
-        return f"Отзыв от {self.id_user} на {self.id_product}"
